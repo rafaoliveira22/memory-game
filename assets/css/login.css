@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.wrapper{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    gap:20px;
+}
+
+/* HEADER */
+
+header{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    gap:var(--gap-main);
+}
+
+header > .title{
+    font-family: var(--font-title);
+    font-size: var(--font-size-title);
+    text-align:center;
+}
+
+header > img{
+    max-width:100%;
+}
+
+/* LOGIN FORM*/
+.container{
+    
+}
+
+.login-form > .login-inputs{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    gap:var(--gap-main);
+}
+
+.login-form > .login-inputs > input{
+    border: 1px solid var(--color-font-main);
+    border-radius:var(--border-radius-main);
+
+    width:100%;
+    max-width:300px;
+
+    outline:none;
+    padding:var(--padding-main);
+}
+
+.login-form > .login-inputs > button{
+    padding:var(--padding-main);
+    background-color:var(--color-main-login);
+
+    width:100%;
+    max-width:300px;
+
+    border-radius:var(--border-radius-main);
+    font-family:var(--font-title);
+    font-weight:bold;
+    font-size:var(--font-size-main);
+    cursor:pointer;
+}
+
+.login-form > .login-inputs > button:hover{
+    background-color:#B1CDF8;
+}
+
+.login-form > .login-inputs > button:disabled{
+    cursor:auto;
+    background-color:transparent;
+    color: #aaa;
+}
+
+small{
+    font-weight:bold;
+    color: rgb(201, 198, 198);
+}
+

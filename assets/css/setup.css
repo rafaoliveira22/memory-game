@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@700&family=Poppins&display=swap');
+
+/*
+    font-family: 'Goldman', cursive;
+    font-family: 'Poppins', sans-serif;
+*/
+
+:root{
+    --color-main-login:#50A7F2;
+    --color-font-main:#333;
+
+    --font-main: 'Poppins', sans-serif;
+    --font-title: 'Goldman', cursive;
+
+    --font-size-main:1em;
+    --font-size-title:1.8em;
+
+    --border-radius-main:8px;
+    --padding-main:10px;
+
+    --gap-main:10px;
+}
