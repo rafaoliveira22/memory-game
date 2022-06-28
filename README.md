@@ -15,7 +15,7 @@
 ### 🎮 SCREEN 3 - PLAY GAME
  ![login](assets/img/screens/screen-play-game.png)
 
-##  **>>> [Go Memory Game]()**
+##  **>>> [Go Memory Game](https://rafaoliveira22.github.io/memory-game/)**
 
 
 
