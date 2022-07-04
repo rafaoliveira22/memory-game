@@ -125,6 +125,8 @@ window.onload = () => {
     loadGame();
 }
 
+// fim
+
 
 
 
