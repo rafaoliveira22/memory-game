@@ -20,3 +20,8 @@
 
     --gap-main:10px;
 }
+
+small{
+    font-weight:bold;
+    color: rgba(201, 198, 198, 0.151);
+}

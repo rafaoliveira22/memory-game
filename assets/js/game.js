@@ -1,4 +1,6 @@
 const grid = document.querySelector('div#grid');
+const spanUserName = document.querySelector('span#userName');
+const spanTimer = document.querySelector('span#timer');
 
 const characters = [
     'card-flash',
@@ -27,7 +29,8 @@ const checkEndGame = () =>{
     const disabledCards = document.querySelectorAll('.disabled-card');
 
     if(disabledCards.length == 20){
-        alert("Parabéns,você ganhou X_X");
+        clearInterval(this.loop);
+        alert(`Parabéns, ${spanUserName.innerHTML}! Você conseguiu concluir o Jogo da Memória em um tempo de ${spanTimer.innerHTML} segundos.`);
     }
 }
 
@@ -87,6 +90,7 @@ const createCard = (character) => {
     card.appendChild(cardFront);
     card.appendChild(cardBack);
     grid.appendChild(card);
+    
 
     /* no html é possivel criar atributos nas tags,bsta adicionar "data-",nesse caso vamos criar uma atributo para as cartas,chamado data-character,e cada carta sera identificada por esse atributo,seguida pelo nome do personagem. Ex: <div class="card" data-character="card-flash"> */
     card.setAttribute('data-character', character);
@@ -108,6 +112,19 @@ const loadGame = () =>{
     });
 } //laodGame()
 
-loadGame();
+const startTimer = () => {
+    this.loop = setInterval(() => {
+        const currentTime = +spanTimer.innerHTML;
+        spanTimer.innerHTML = currentTime + 1;
+    }, 1000)
+}
+
+window.onload = () => {
+    spanUserName.innerHTML = localStorage.getItem('player');
+    startTimer();
+    loadGame();
+}
+
+
 
 
